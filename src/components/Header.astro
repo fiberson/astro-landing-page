@@ -1,0 +1,48 @@
+---
+
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
+
+---
+<header class="pt-2">
+
+    <nav class="bg-white py-2 md:py-4">
+        <div class="container px-4 mx-auto md:flex md:items-center">
+
+            <div class="md:flex flex-col md:flex-row">
+                <a href="#" class="font-bold text-xl text-yona">
+                    <Image class="inline-flex" src={logo} alt="Logo" />
+                    Klyonov
+                </a>
+            </div>
+
+            <div class="md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
+                <a href="/" class="inline-flex items-center current p-2 lg:px-4 md:mx-2 text-black hover:text-yona transition-colors duration-300 after:content-['']">Главная</a>
+                <a href="#cards" class="inline-flex items-center p-2 lg:px-4 md:mx-2 text-black hover:text-yona transition-colors duration-300">Карточки</a>
+                <a href="#grid" class="inline-flex items-center p-2 lg:px-4 md:mx-2 text-black hover:text-yona transition-colors duration-300">Сетка</a>
+                <a href="#form" class="inline-flex items-center p-2 lg:px-4 md:mx-2 text-black hover:text-yona transition-colors duration-300">Форма</a>
+                <a href="#contact" class="inline-flex items-center p-2 lg:px-6 md:mx-2 text-white hover:text-yona text-center border-solid rounded-4xl border bg-yona hover:border-yona hover:bg-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">Связаться</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+
+    .current {
+        position: relative;
+        color: var(--color-yona);
+    }
+
+    .current::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        left: calc(48%);
+        margin-top: 25px;
+        background-color: var(--color-yona);
+        width: 0.3em;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+</style>
