@@ -11,6 +11,7 @@ html,
 body {
 	@apply px-4 m-0 w-full h-full;
     font-family: 'Inter', sans-serif;
+    background-color: #FAFAFA;
 	}
 
 .container {
