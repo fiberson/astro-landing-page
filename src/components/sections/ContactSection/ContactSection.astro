@@ -1,0 +1,23 @@
+---
+import Roadmap from "./components/Roadmap.astro";
+import ContactUsForm from "./components/ContactUsForm.astro";
+---
+
+<section class="container mt-32">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+    <div class="md:col-span-1 px-4 md:px-0">
+      <h2 class="text-4xl font-bold mb-8 text-center md:text-left">Этапы работы</h2>
+      <div class="space-y-6 max-w-sm mx-auto md:mx-0">
+        <Roadmap step="1" title="HTML" />
+        <Roadmap step="2" title="CSS" />
+        <Roadmap step="3" title="JAVASCRIPT" />
+        <Roadmap step="4" title="TYPESCRIPT" />
+        <Roadmap step="5" title="REACT" />
+        <Roadmap step="6" title="REDUX" />
+      </div>
+    </div>
+    <div class="md:col-span-2">
+      <ContactUsForm />
+    </div>
+  </div>
+</section>

@@ -9,11 +9,15 @@
 
 html,
 body {
-	@apply px-4 m-0 w-full h-full;
+	@apply m-0 w-full h-full;
     font-family: 'Inter', sans-serif;
     background-color: #FAFAFA;
 	}
 
 .container {
     @apply container mx-auto;
+}
+
+.footer-bg {
+    background-color: #171717;
 }

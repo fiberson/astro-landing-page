@@ -1,3 +1,21 @@
 ---
-
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.svg';
 ---
+
+<footer class="footer-bg py-8 mt-14">
+    <div class="container px-4 mx-auto md:flex md:items-center">
+        <div class="md:flex flex-col md:flex-row">
+            <a href="#" class="font-bold text-xl text-yona">
+                <Image class="inline-flex" src={logo} alt="Logo" />
+                Klyonov
+            </a>
+        </div>
+
+        <div class="md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0">
+            <div class="text-white">designed by <a href="https://oxee.su/" target="_blank" class="text-yona underline underline-offset-4">oxee</a></div>
+        </div>
+    </div>
+</footer>
+
+

@@ -1,0 +1,11 @@
+---
+const { step, title } = Astro.props;
+---
+
+    <div class="flex items-center gap-4">
+      <div class="w-7 h-7 rounded-full flex items-center justify-center text-sm text-white bg-gray-400 font-bold">
+        {step}
+      </div>
+      <div class="w-5 h-[1px] bg-gray-400"></div>
+      <h3 class="font-medium">{title}</h3>
+    </div>
